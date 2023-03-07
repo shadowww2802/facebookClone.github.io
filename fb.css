@@ -797,44 +797,126 @@ nav .right img{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
 
-}
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+    /* nav .left {
+        
+    } */
+    nav .center{
+        display: flex;
+        direction: rtl;
+        background: transparent;
+        padding: 0;
+        margin-left: 0;
+        position: relative;
+        left: 0px;
+    }
     
+    nav .center i{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #e2e2e2;
+        color: #000000;
+        line-height: 40px;
+        padding-right: 11px;
+        font-size: 18px;
+        margin-right: 0;
+        margin-left: 0;
+        cursor: pointer;
+    }
+
+    nav .center input{
+        display: none;
+    }
+ 
+    nav .right .fa-solid {
+        display: none;
+    }
+
+    nav .right img {
+        display: none;
+    }
+
+
+    .main {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main .left {
+        display: none;
+    }
+
+    .main .center {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .main .center .my_post{
+        margin: 0;
+    }
+
+    .main .center .my_post .post_bottom{
+        display: none;
+    }
+
+    .main .center .my_post .post_bottom{
+        display: none;
+    }
+
+    .main .center .my_post hr{
+        display: none;
+    }
+
+    .main .right {
+        display: none;
+    }
+
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
+
+@media only screen and (max-width: 901px) {
+
+    nav {
+        display: flex;
+    }
+
+    nav .left {
+        flex-grow: 3;
+    }
+
+    nav .center {
+        flex-grow: 1;
+    }
+
+    nav .right {
+        display: 3;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .main .left {
+        flex-grow: 1;
+    }
+
+    .main .center {
+        flex-grow: 4;
+    }
+
+    .main .right {
+        display: none;
+    }
 }
